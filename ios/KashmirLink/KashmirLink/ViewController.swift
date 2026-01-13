@@ -9,7 +9,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
     private var offlineView: UIView!
     private var activityIndicator: UIActivityIndicatorView!
 
-    private let websiteURL = URL(string: "https://kashmir.link/")!
+    private let websiteURL = URL(string: "https://jktv.live/")!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -218,7 +218,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         if let url = navigationAction.request.url {
             // Open external links in Safari
-            if !url.host?.contains("kashmir.link") ?? true && navigationAction.navigationType == .linkActivated {
+            if !url.host?.contains("jktv.live") ?? true && navigationAction.navigationType == .linkActivated {
                 UIApplication.shared.open(url)
                 decisionHandler(.cancel)
                 return

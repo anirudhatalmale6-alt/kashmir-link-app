@@ -4,7 +4,7 @@ WebView-based mobile app for Android and iOS with push notification support.
 
 ## Features
 
-- Full-screen WebView displaying kashmir.link
+- Full-screen WebView displaying jktv.live
 - Push notifications via Firebase Cloud Messaging
 - Pull-to-refresh functionality
 - Offline mode with retry button
@@ -199,12 +199,12 @@ The app subscribes to these topics automatically:
 
 **Android:** Edit `MainActivity.java`
 ```java
-private static final String WEBSITE_URL = "https://kashmir.link/";
+private static final String WEBSITE_URL = "https://jktv.live/";
 ```
 
 **iOS:** Edit `ViewController.swift`
 ```swift
-private let websiteURL = URL(string: "https://kashmir.link/")!
+private let websiteURL = URL(string: "https://jktv.live/")!
 ```
 
 ### Change App Colors

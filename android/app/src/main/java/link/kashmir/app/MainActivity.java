@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
     private View customView;
     private WebChromeClient.CustomViewCallback customViewCallback;
 
-    private static final String WEBSITE_URL = "https://kashmir.link/";
+    private static final String WEBSITE_URL = "https://jktv.live/";
     private static final int NOTIFICATION_PERMISSION_CODE = 100;
 
     @Override
@@ -148,7 +148,7 @@ public class MainActivity extends AppCompatActivity {
                 String url = request.getUrl().toString();
 
                 // Handle external links
-                if (!url.contains("kashmir.link")) {
+                if (!url.contains("jktv.live")) {
                     Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                     startActivity(intent);
                     return true;
