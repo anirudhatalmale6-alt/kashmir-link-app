@@ -22,7 +22,6 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.FrameLayout;
 import android.widget.ProgressBar;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -30,7 +29,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-import com.google.firebase.messaging.FirebaseMessaging;
+// import com.google.firebase.messaging.FirebaseMessaging; // Uncomment when adding Firebase
 
 public class MainActivity extends AppCompatActivity {
 
@@ -58,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         setupSwipeRefresh();
         createNotificationChannel();
         requestNotificationPermission();
-        subscribeToTopics();
+        // subscribeToTopics(); // Uncomment when adding Firebase
 
         // Load website
         loadWebsite();
@@ -118,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
 
         // User agent (identify as Chrome mobile)
         String userAgent = webSettings.getUserAgentString();
-        webSettings.setUserAgentString(userAgent + " KashmirLinkApp/1.0");
+        webSettings.setUserAgentString(userAgent + " JKTVLiveApp/1.0");
 
         // WebViewClient for handling URLs
         webView.setWebViewClient(new WebViewClient() {
@@ -264,6 +263,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /* Uncomment when adding Firebase
     private void subscribeToTopics() {
         // Subscribe to live stream notifications
         FirebaseMessaging.getInstance().subscribeToTopic("live_stream")
@@ -281,6 +281,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
     }
+    */
 
     @Override
     public void onBackPressed() {
