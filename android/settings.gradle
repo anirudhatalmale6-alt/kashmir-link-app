@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Kashmir Link"
+rootProject.name = "JKTV Live"
 include ':app'

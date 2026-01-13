@@ -1,4 +1,4 @@
-# Kashmir Link Mobile App
+# JKTV Live Mobile App
 
 WebView-based mobile app for Android and iOS with push notification support.
 
@@ -29,7 +29,7 @@ WebView-based mobile app for Android and iOS with push notification support.
 
 2. **Configure Firebase**
    - Go to [Firebase Console](https://console.firebase.google.com)
-   - Create new project "Kashmir Link"
+   - Create new project "JKTV Live"
    - Add Android app with package name: `link.kashmir.app`
    - Download `google-services.json`
    - Place in `android/app/` folder
@@ -153,7 +153,7 @@ admin.initializeApp({
 const message = {
   notification: {
     title: '🔴 Live Now!',
-    body: 'Kashmir Link is streaming live. Tap to watch!'
+    body: 'JKTV Live is streaming live. Tap to watch!'
   },
   topic: 'live_stream'
 };
@@ -175,7 +175,7 @@ curl -X POST https://fcm.googleapis.com/fcm/send \
     "to": "/topics/live_stream",
     "notification": {
       "title": "🔴 Live Now!",
-      "body": "Kashmir Link is streaming live!"
+      "body": "JKTV Live is streaming live!"
     }
   }'
 ```
